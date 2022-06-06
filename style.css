@@ -40,10 +40,19 @@
 
     
   }
+
+  button {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      outline: none;
+
+  }
   a {
      margin: 0;
     text-decoration: none;
     color:var(--color-white)
+    size: 50px 50px;
   }
   .navbar__logo {
       margin: 0 0;
@@ -86,14 +95,14 @@
   #navbar {
       display: flex;
       justify-content: space-between;
-      background-color: var(--color-pink);
+      background-color: var(--color-dark-white);
       align-items: center;
       color:var(--color-white)
       padding: 16px;
   }
 .navbar__menu{
     display: flex;
-    color: white;
+    color: var(--color-grey);
     
 
 }
@@ -119,5 +128,32 @@
 
 }
 .navbar__menu__item:hover {
-    background-color: var(--color-dark-pink);
+    background-color: var(--color-yellow);
+}
+#home {
+    background: url('imgs/home-background.png') center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 40%;
+    border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+    color: var(--color-white);
+}
+
+.home__contact {
+      color: var(--color-white)
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    border-radius: var(--size-boder-radius)
+    
 }
