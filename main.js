@@ -10,3 +10,17 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar--dark');
     }
 });
+
+//Handle scrolling when tappng on the navbar menu
+const navbarMenu = document.querySelector('.navbar__menu');
+navbar.addEventListener('click', (event)=> {
+    
+    const target = event.target;
+    const link = target.dataset.link;
+    if (link == null) {
+        return;
+    }
+    console.log(event.target.dataset.link);
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({behavior: 'smooth'});
+});
