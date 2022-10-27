@@ -98,7 +98,7 @@ workBtnContainer.addEventListener('click', (e) => {
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth'});
-    selectNavItem()
+    selectedNavItem();
 }
 
 // 1. 모든 섹션 요소들과 메뉴아이템들을 가지고 온다
